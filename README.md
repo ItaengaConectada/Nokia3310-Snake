@@ -1,7 +1,9 @@
 # Nokia3310-Snake
 
 
-**This is project fork of project code of [Ania Kubow](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw)  @kubowania**
+**This is project fork of the project code of [Ania Kubow](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw)  @kubowania**
+
+**Este projeto é um fork do game criado por Ania Kubow**
 
 [*Forked by Itaenga Conectada*](https://www.facebook.com/ItaengaConectada.Oficial)
 
