@@ -5,7 +5,7 @@
 
 [*Forked by Itaenga Conectada*](https://www.facebook.com/ItaengaConectada.Oficial)
 
-#-----
+-----
 
 A vanilla JavaScript game with tutorial
 
