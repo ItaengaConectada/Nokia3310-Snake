@@ -7,6 +7,8 @@
 
 [*Forked by Itaenga Conectada*](https://www.facebook.com/ItaengaConectada.Oficial)
 
+[Informações em português](https://github.com/ItaengaConectada/Nokia3310-Snake/blob/master/README-PT.md)
+
 -----
 
 A vanilla JavaScript game with tutorial
