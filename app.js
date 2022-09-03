@@ -1,21 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  /*screen = {
-    width: 10,
-    wres : 200, // Resolution in pixels for view screen of the game.
-    i : 0, // position i, j in virtual screen (nums squares axis x and y)
-    j : 0,
-    index: 0, // index position in unidimensional array for list returned for div's.
-    screenView: [], // Variable for store Screen of the game in list.
-
-    // Get Index position in array screenView.
-    getIndex: function(i, j) {
-      this.i = i;
-      this.j = j;
-      this.index = this.width*i + j;
-      return this.index;
-    }
-    
-  }*/
 
   const squares = document.querySelectorAll('.grid div')
 
@@ -26,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const scoreDisplay = document.querySelector('span')
   const startBtn = document.querySelector('.start')
-  console.log(">keys "+keyUp)
 
   const width = 10
   let currentIndex = 0 //so first div in our grid
@@ -115,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.addEventListener('keyup', control)
-  //document.addEventListener()
   startBtn.addEventListener('click', startGame)
 
   keyDown.addEventListener('click', ( e ) => direction = +width )
