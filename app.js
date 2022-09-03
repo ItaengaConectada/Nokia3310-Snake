@@ -1,7 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
+  /*screen = {
+    width: 10,
+    wres : 200, // Resolution in pixels for view screen of the game.
+    i : 0, // position i, j in virtual screen (nums squares axis x and y)
+    j : 0,
+    index: 0, // index position in unidimensional array for list returned for div's.
+    screenView: [], // Variable for store Screen of the game in list.
+
+    // Get Index position in array screenView.
+    getIndex: function(i, j) {
+      this.i = i;
+      this.j = j;
+      this.index = this.width*i + j;
+      return this.index;
+    }
+    
+  }*/
+
   const squares = document.querySelectorAll('.grid div')
+
+  const keyUp = document.querySelector('#key-Up')
+  const keyDown = document.querySelector('#key-Down')
+  const keyLeft = document.querySelector('#key-Left')
+  const keyRight = document.querySelector('#key-Right')
+
   const scoreDisplay = document.querySelector('span')
   const startBtn = document.querySelector('.start')
+  console.log(">keys "+keyUp)
 
   const width = 10
   let currentIndex = 0 //so first div in our grid
@@ -78,17 +103,24 @@ document.addEventListener('DOMContentLoaded', () => {
   function control(e) {
     squares[currentIndex].classList.remove('snake')
 
-    if(e.keyCode === 39) {
+    if(e.keyCode === 39 )  {
       direction = 1 //if we press the right arrow on our keyboard, the snake will go right one
-    } else if (e.keyCode === 38) {
+    } else if (e.keyCode === 38 ) {
       direction = -width // if we press the up arrow, the snake will go back ten divs, appearing to go up
-    } else if (e.keyCode === 37) {
+    } else if (e.keyCode === 37 ) {
       direction = -1 // if we press left, the snake will go left one div
-    } else if (e.keyCode === 40) {
+    } else if (e.keyCode === 40 ) {
       direction = +width //if we press down, the snake head will instantly appear in the div ten divs from where you are now
     }
   }
 
   document.addEventListener('keyup', control)
+  //document.addEventListener()
   startBtn.addEventListener('click', startGame)
+
+  keyDown.addEventListener('click', ( e ) => direction = +width )
+  keyLeft.addEventListener('click', ( e ) => direction = -1  )
+  keyRight.addEventListener('click', ( e ) => direction = 1  )
+  keyUp.addEventListener('click', ( e ) => direction = -width )
+  
 })

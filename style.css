@@ -1,18 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body {
+  font-family: "DotGothic16", sans-serif;
+}
+
 .grid {
   width: 200px;
   height: 200px;
   display: flex;
   flex-wrap: wrap;
   border-style: solid;
+  background-color: #a9cea5;
+  
 }
 
 .grid div {
   width: 20px;
   height: 20px;
+  /*border: 1px solid  rgb(8,245, 8, 0.4);*/
+}
+
+.grid-controls {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  margin: 0 auto;
+  width: 10%;
+  text-align: center;
+  gap: 10px;
+
+}
+
+.grid-controls button, .grid-controls-item {
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.grid-controls button {
+  background-color: rgb(22, 71, 71);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid rgb(7, 46, 33);
+}
+
+.grid-controls button:hover {
+  background-color: #254b21;
 }
 
 .snake {
-  background-color: blue;
+  background-color: #000;
 }
 
 .apple {
